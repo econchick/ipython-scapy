@@ -1,0 +1,132 @@
+Return-Path: <erin.lynn.root+caf_=lynn=fastmail.es@gmail.com>
+Received: from compute2.internal (compute2.nyi.mail.srv.osa [10.202.2.42])
+	 by sloti14d3p1 (Cyrus git2.5+0-git-fastmail-9328) with LMTPA;
+	 Thu, 08 Aug 2013 15:09:55 -0400
+X-Sieve: CMU Sieve 2.4
+X-Spam-known-sender: yes
+X-Spam-score: 0.0
+X-Spam-hits: BAYES_00 -1.9, RCVD_IN_DNSWL_LOW -0.7, LANGUAGES unknown,
+  BAYES_USED global, SA_VERSION 3.3.2
+X-Spam-source: IP='74.125.82.177', Host='mail-we0-f177.google.com', Country='US',
+  FromHeader='cx', MailFrom='com'
+X-Spam-charsets: 
+X-Resolved-to: lynn@fastmail.es
+X-Delivered-to: lynn@fastmail.es
+X-Mail-from: erin.lynn.root+caf_=lynn=fastmail.es@gmail.com
+Received: from mx4 ([10.202.2.203])
+  by compute2.internal (LMTPProxy); Thu, 08 Aug 2013 15:09:55 -0400
+Received: from mail-we0-f177.google.com (mail-we0-f177.google.com [74.125.82.177])
+	(using TLSv1 with cipher ECDHE-RSA-RC4-SHA (128/128 bits))
+	(No client certificate requested)
+	by mx4.messagingengine.com (Postfix) with ESMTPS id 2EB943C00BC
+	for <lynn@fastmail.es>; Thu,  8 Aug 2013 15:09:54 -0400 (EDT)
+Received: by mail-we0-f177.google.com with SMTP id m46so2845167wev.22
+        for <lynn@fastmail.es>; Thu, 08 Aug 2013 12:09:53 -0700 (PDT)
+X-Received: by 10.194.170.227 with SMTP id ap3mr4308361wjc.40.1375988993124;
+        Thu, 08 Aug 2013 12:09:53 -0700 (PDT)
+X-Forwarded-To: lynn@fastmail.es
+X-Forwarded-For: erin.lynn.root@gmail.com lynn@fastmail.es
+X-Remote-Delivered-To: erin.lynn.root@gmail.com
+Received: by 10.194.82.198 with SMTP id k6csp34152wjy;
+        Thu, 8 Aug 2013 12:09:51 -0700 (PDT)
+X-Received: by 10.52.30.129 with SMTP id s1mr2018358vdh.52.1375988990632;
+        Thu, 08 Aug 2013 12:09:50 -0700 (PDT)
+Received: from out2-smtp.messagingengine.com (out2-smtp.messagingengine.com. [66.111.4.26])
+        by mx.google.com with ESMTPS id jf10si3517353vdb.50.2013.08.08.12.09.49
+        for <erin.lynn.root@gmail.com>
+        (version=TLSv1.2 cipher=ECDHE-RSA-RC4-SHA bits=128/128);
+        Thu, 08 Aug 2013 12:09:50 -0700 (PDT)
+Received-SPF: pass (google.com: domain of hs@ox.cx designates 66.111.4.26 as permitted sender) client-ip=66.111.4.26;
+Authentication-Results: mx.google.com;
+       spf=pass (google.com: domain of hs@ox.cx designates 66.111.4.26 as permitted sender) smtp.mail=hs@ox.cx;
+       dkim=pass header.i=@messagingengine.com
+Received: from compute6.internal (compute6.nyi.mail.srv.osa [10.202.2.46])
+	by gateway1.nyi.mail.srv.osa (Postfix) with ESMTP id 6DE1F20E6D
+	for <erin.lynn.root@gmail.com>; Thu,  8 Aug 2013 15:09:40 -0400 (EDT)
+Received: from frontend1 ([10.202.2.160])
+  by compute6.internal (MEProxy); Thu, 08 Aug 2013 15:09:42 -0400
+DKIM-Signature: v=1; a=rsa-sha1; c=relaxed/relaxed; d=
+	messagingengine.com; h=content-type:subject:mime-version:from
+	:date:content-transfer-encoding:message-id:content-description
+	:to; s=smtpout; bh=ugA8qqmrOXWxgBdB7v0H+0BOcXE=; b=BbM30ezgg/ZCT
+	2g7qKCZPzT7BwCYcxKrW6AK8q6a/88ullbu0fihzOkWx3mkPrTsiPp0m51UAozU4
+	Ta/vDwZ8mTrpZQ9C6OCfyUZ+nPw7T1PnKSiGBfVDmLth4+c7cwxOjvjKrv6lvMcF
+	EZpgpOcMNMWbyak/oaO7UR3OPYJoJI=
+X-Sasl-enc: vw11Io4FZTVtV4ZAON5Tu4opTtdA/ixWjBahwhRhUsfF 1375988978
+Received: from omega.fritz.box (unknown [5.28.99.177])
+	by mail.messagingengine.com (Postfix) with ESMTPA id ECD81C00E8A
+	for <erin.lynn.root@gmail.com>; Thu,  8 Aug 2013 15:09:37 -0400 (EDT)
+Content-Type: multipart/encrypted; boundary="Apple-Mail=_514AD934-51DC-469A-BDE1-05A7C8FE2EF6"; protocol="application/pgp-encrypted";
+Subject: gpg test
+Mime-Version: 1.0 (Mac OS X Mail 6.5 \(1508\))
+X-Pgp-Agent: GPGMail 505
+From: Hynek Schlawack <hs@ox.cx>
+Date: Thu, 8 Aug 2013 21:09:36 +0200
+Content-Transfer-Encoding: 7bit
+Message-Id: <6663DBC6-3EEB-4360-B893-681E57F042E1@ox.cx>
+Content-Description: OpenPGP encrypted message
+To: Lynn Root <erin.lynn.root@gmail.com>
+X-Mailer: Apple Mail (2.1508)
+
+This is an OpenPGP/MIME encrypted message (RFC 2440 and 3156)
+--Apple-Mail=_514AD934-51DC-469A-BDE1-05A7C8FE2EF6
+Content-Transfer-Encoding: 7bit
+Content-Type: application/pgp-encrypted
+Content-Description: PGP/MIME Versions Identification
+
+Version: 1
+
+--Apple-Mail=_514AD934-51DC-469A-BDE1-05A7C8FE2EF6
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+	filename=encrypted.asc
+Content-Type: application/octet-stream;
+	name=encrypted.asc
+Content-Description: OpenPGP encrypted message
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - http://gpgtools.org
+
+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
+E3UVbSVQ/dbj2tVJpg/qYyGedSpr5Go6
+=0DXU
+-----END PGP MESSAGE-----
+
+--Apple-Mail=_514AD934-51DC-469A-BDE1-05A7C8FE2EF6--
